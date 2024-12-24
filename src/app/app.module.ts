@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { StdformComponent } from './shared/component/stdform/stdform.component';
+import { StdtableComponent } from './shared/component/stdtable/stdtable.component';
+import { StddashComponent } from './shared/component/stddash/stddash.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StdformComponent,
+    StdtableComponent,
+    StddashComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
